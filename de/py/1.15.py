@@ -1,5 +1,3 @@
-# https://colab.research.google.com/drive/1NwUs4TSe5y0dQBHBwI8ORM-ek08PqdTS
-
 from sympy.physics.units import *
 from sympy import *
 
