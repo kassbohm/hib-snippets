@@ -11,5 +11,9 @@ Python-Snippets for Hibbeler-Engineering-Mechanics-Dynamics-Tasks
 
 Use with Google Colaboratory, if you have a Google-account. Otherwise, run the Python-Code or Jupyter-Notebook on a platform of your choice - or on your own box.
 
+## Issues
+Please open an issue, if something seems to be wrong.
+
+
 ## Contributing
-Please open an issue first to discuss what you would like to change or like to have changed.
+Please let me know, if you would like to contribute.
