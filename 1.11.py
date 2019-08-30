@@ -12,4 +12,6 @@ a0 = 1 *m/s/s
 v2 = v1 - a0*t2 + b*t2*t2/2
 
 pprint("\nv2 / (m/s):")
-pprint(v2 / (m/s))
+tmp = v2
+tmp /= m/s
+pprint(N(tmp,3))
