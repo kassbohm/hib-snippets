@@ -1,5 +1,4 @@
-# https://colab.research.google.com/drive/1yds8MsnamC9SiXcrq-320rPdWVq6uK7k
-
+# %%
 from sympy.physics.units import *
 from sympy import *
 
