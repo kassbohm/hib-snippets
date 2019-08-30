@@ -1,30 +1,28 @@
 from sympy.physics.units import *
 from sympy import *
 
-r = S(3)/10 *meter
-v = 2 * meter/second
-a = 3 * meter/second/second
+prec = 4
 
-c1, s1 = cos(50 *degrees), sin(50 *degrees)
+r = 3*m/10
+v = 2 * m/s
+a = 3 * m/s**2
+
+p1 = rad(50)
+p1 = 50*pi/180
+c1 = cos(p1)
+s1 = sin(p1)
 
 omega = v/(r*s1)
-alpha = 1/s1*(a/r - omega**2*c1)
-
-pprint("\nomega:")
+pprint("\nomega / (1/s):")
 tmp = omega
-pprint(N(tmp,3))
+tmp /= 1/s
+pprint(N(tmp,prec))
 
-pprint("\nalpha:")
+
+pprint("\nalpha / (1/s²):")
+alpha  = N(a/r)
+alpha -= N(omega**2*c1)
+alpha /= s1
 tmp = alpha
-pprint(N(tmp,3))
-
-# omega:
-# 8.7
-# ───
-#  s
-#
-# alpha:
-# -50.5
-# ──────
-#    2
-#   s
+tmp /= (1/s**2)
+pprint(N(tmp,prec))
