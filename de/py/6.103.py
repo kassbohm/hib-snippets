@@ -24,7 +24,6 @@ theta1 = m1*h*h/12
 # x1 = x_1''
 x1, Ah, Av, C, Gh, Gv = var("x_1, A_h, A_v, C, G_h, G_v")
 
-# equilibrium conditions:
 e1 = Eq( 2*theta1*x1/h,  M - half*h*Ah - half*h*Gh )
 e2 = Eq( m1*x1,  Ah - Gh)
 e3 = Eq( 0,  m1*g - Gv - Av)
