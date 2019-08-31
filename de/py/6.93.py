@@ -1,6 +1,12 @@
 from sympy.physics.units import *
 from sympy import *
 
+prec = 3
+
+kilo = 1000
+newton = kg*m/s**2
+kN = kilo*newton
+
 M, k, a, ra, ri, muH, muG = var("M, k, a, ra, ri, muH, muG")
 
 sub_list = [
@@ -36,21 +42,25 @@ phi = sol[phi]
 pprint("\nt=0:")
 
 pprint("\nSeilkraft S / kN:")
-tmp = S/1000/newton
+tmp = S
 tmp = tmp.subs(sub_list)
-pprint(N(tmp,3))
+tmp /= kN
+pprint(N(tmp,prec))
 
 pprint("\nphi'' / (1/s²):")
-tmp = phi / (1/s/s)
+tmp = phi
 tmp = tmp.subs(sub_list)
-pprint(N(tmp,3))
+tmp /= 1/s**2
+pprint(N(tmp,prec))
 
 pprint("\nHaftkraft H / kN:")
-tmp = H/ (kilo*newton)
+tmp = H
 tmp = tmp.subs(sub_list)
-pprint(N(tmp,3))
+tmp /= kN
+pprint(N(tmp,prec))
 
 pprint("\nNormalkraft N / kN:")
-tmp = M*g / (kilo*newton)
+tmp = M*g
 tmp = tmp.subs(sub_list)
-pprint(N(tmp,3))
+tmp /= kN
+pprint(N(tmp,prec))
