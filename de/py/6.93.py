@@ -17,7 +17,7 @@ sub_list = [
     ( ri , S(8)/10  *m ),
     ( muH , S(5)/10 ),
     ( muG , S(4)/10 ),
-]
+    ]
 
 # grav. acceleration:
 g = 10 *m/s/s
