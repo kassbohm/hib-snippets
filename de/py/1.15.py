@@ -1,16 +1,19 @@
-# %%
 from sympy.physics.units import *
 from sympy import *
 
 k = 5 *m*m/s
 b = 4 *m
+x, x2 = var("x, x2", positive=True)
 
-s2 = var("s2", positive=True)
-eq = Eq( k * 6*s, b*s2 + s2*s2/2 - b *5*m - 12*m*m  )
+lhs = k*6*s
+tmp = b*x + x*x/2
+rhs = tmp.subs(x, x2) - tmp.subs(x, 5*m)
 
-pprint("\nEquation:")
+eq = Eq( lhs, rhs )
 pprint(eq)
 
-s2 = solve(eq,s2)[0]
+sol = solve(eq,x2)[0]
 pprint("\ns2 / m:")
-pprint(N(s2/m,3))
+tmp = sol
+tmp /= m
+pprint(N(tmp,3))

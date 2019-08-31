@@ -2,9 +2,11 @@ from sympy.physics.units import *
 from sympy import *
 
 t = var("t")
-ω, α = var("ω, α")
-C, S = var("C, S")
+ω = var("ω")
 r, l = 3 *m, 5 *m
+
+# Shortcuts:
+C, S = var("C, S")
 
 theta = Function("theta")(t)
 s = sqrt(r*r + l*l - 2*r*l*cos(theta))
