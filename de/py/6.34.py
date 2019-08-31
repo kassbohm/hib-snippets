@@ -1,12 +1,12 @@
 from sympy.physics.units import *
 from sympy import *
 
+prec = 5
+
 newton = kg*m/s**2
 g = S(981)/100 *m/s**2
 
 mass, a, mu = var("mass, a, mu")
-
-prec = 5
 
 sub_list = [
     (mass, 800 *kg),
@@ -48,15 +48,3 @@ pprint(N(tmp,prec))
 pprint("\ntheta / deg:")
 tmp = 45 - tmp
 pprint(N(tmp,prec))
-
-# N / Newton:
-# 6770.9
-#
-# S / Newton:
-# 1523.2
-#
-# phi / deg:
-# 26.392
-#
-# theta / deg:
-# 18.608
