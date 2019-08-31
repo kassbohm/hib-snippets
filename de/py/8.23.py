@@ -26,7 +26,7 @@ tmp = x
 tmp /= m/s**2
 pprint(N(tmp,3))
 
-pprint("\nx'(2 s):")
+pprint("\nx'(2 s) / (m/s):")
 v = x* 2*s
 tmp = v
 tmp /= m/s
