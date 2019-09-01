@@ -75,7 +75,7 @@ pprint(N(Ixx_2H / unit,prec))
 pprint("\nIzz / (10³ kg m²):")
 pprint(N(Izz_2H / unit ,prec))
 
-pprint("\n\nCylinder:")
+pprint("\nCylinder:")
 Ixx_Z = mZ*(3*R*R + h*h)/12
 Izz_Z = mZ*R**2/2
 pprint("\nIxx / (10³ kg m²):")
@@ -83,7 +83,7 @@ pprint(N(Ixx_Z / unit ,prec))
 pprint("\nIzz / (10³ kg m²):")
 pprint(N(Izz_Z / unit,prec))
 
-pprint("\n\nTotal:")
+pprint("\nTotal:")
 pprint("\nIxx / (10³ kg m²):")
 Ixx = Ixx_2H + Ixx_Z
 tmp = Ixx / unit
