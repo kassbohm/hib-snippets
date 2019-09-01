@@ -1,6 +1,8 @@
 from sympy.physics.units import *
 from sympy import *
 
+mm = m/1000
+
 ra = 200 *mm
 rb = 50 *mm
 
