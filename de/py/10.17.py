@@ -65,7 +65,7 @@ Ixx -= d3**2 * mH
 d3 += h/2
 Ixx += d3**2 * mH
 
-pprint("\n\nUnion of both Semispheres:")
+pprint("\nUnion of both Semispheres:")
 Ixx_2H = Ixx*2
 Izz_2H = Izz*2
 unit = 1000 * kg * m**2
