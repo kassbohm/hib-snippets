@@ -6,16 +6,19 @@ wx = S(6)/10 /s   # w2
 wy = 0
 wz = S(15)/100 /s # w1
 
-beta = 30 *pi/180
+beta = S(30)*pi/180
+
+rx, ry, rz = 0, l * cos(beta), l * sin(beta)
+
+wxp = S(4)/10 /s**2    # w2'
+wyp = wz*wx            # as in 9.1
+wzp = S(2)/10 /s**2    # w1'
 
 # Angular velocity:
 w = Matrix([wx,wy,wz])
 
-# Position vector and angular acceleration:
-(rx, ry, rz) = (0, l*cos(beta), l*sin(beta))
-(wxp, wyp, wzp) = (0, wz*wx, S(8)/10 /s/s)
+# Position vector:
 r = Matrix([rx,ry,rz])
-wp = Matrix([wxp,wyp,wzp])
 
 # Velocity v:
 pprint("\nv / (m/s):")
@@ -24,6 +27,9 @@ vval = v / (m/s)
 pprint(N(vval,3))
 
 # Acceleration a:
+# Angular acceleration:
+wp = Matrix([wxp,wyp,wzp])
+
 a1 = wp.cross(r)
 a2 = w.cross(w.cross(r))
 
