@@ -64,7 +64,7 @@ A2 = Matrix([0,0,a2])
 R = Matrix([ [cb, sb, 0], [-sb, cb, 0], [0, 0, 1] ])
 Rt = R.transpose()
 
-ref = "(x\u0304, y\u0304, z\u0304)"
+ref = "(x\u0304,y\u0304,z\u0304)"
 pprint("\n"+ref+"-comp's of the wheel-part.-velocity vA / (m/s):")
 tmp = R*vA
 tmp /= m/s
