@@ -65,7 +65,7 @@ R = Matrix([ [cb, sb, 0], [-sb, cb, 0], [0, 0, 1] ])
 Rt = R.transpose()
 
 ref = "(x\u0304, y\u0304, z\u0304)"
-pprint("\n"+ref+"-comp's of the velocity vA of a part. on the wheel at A / (m/s):")
+pprint("\n"+ref+"-comp's of the wheel-part.-velocity vA / (m/s):")
 tmp = R*vA
 tmp /= m/s
 pprint(N(tmp,prec))
@@ -76,12 +76,12 @@ tmp = vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n"+ref+"comp's of the vel. of the wheel-part. at A rel. to "+ref+" / (m/s):")
+pprint("\n"+ref+"comp's of the wheel-part.-velocity rel. to "+ref+" / (m/s):")
 tmp = R*vA - vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n(x,y,z)-comp's of the vel. of the wheel-part. at A rel. to "+ref+" / (m/s):")
+pprint("\n(x,y,z)-comp's of the wheel-part.-velocity rel. to "+ref+" / (m/s):")
 vxyz = Rt*(R*vA - vAb)
 tmp = vxyz
 tmp /= m/s
