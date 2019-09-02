@@ -106,3 +106,54 @@ pprint("\nax / (m/s²):")
 tmp = ax
 tmp /= m/s**2
 pprint(N(tmp,prec))
+
+# vA / (m/s):
+# ⎡-2.4⎤
+# ⎢    ⎥
+# ⎢ 0  ⎥
+# ⎢    ⎥
+# ⎣ 0  ⎦
+#
+# aA / (m/s²):
+# ⎡-4.8⎤
+# ⎢    ⎥
+# ⎢-2.0⎥
+# ⎢    ⎥
+# ⎣ 0  ⎦
+#
+# w2 / (1/s):
+# 0.720
+#
+# (x̄,ȳ,z̄)-comp's of the wheel-part.-velocity vA / (m/s):
+# ⎡-1.92⎤
+# ⎢     ⎥
+# ⎢1.44 ⎥
+# ⎢     ⎥
+# ⎣  0  ⎦
+#
+# (x̄,ȳ,z̄)-comp's of the vel. of a part. on the rod BC next to A / (m/s):
+# ⎡ 0  ⎤
+# ⎢    ⎥
+# ⎢1.44⎥
+# ⎢    ⎥
+# ⎣ 0  ⎦
+#
+# (x̄,ȳ,z̄)comp's of the wheel-part.-velocity rel. to (x̄,ȳ,z̄) / (m/s):
+# ⎡-1.92⎤
+# ⎢     ⎥
+# ⎢  0  ⎥
+# ⎢     ⎥
+# ⎣  0  ⎦
+#
+# (x,y,z)-comp's of the wheel-part.-velocity rel. to (x̄,ȳ,z̄) / (m/s):
+# ⎡-1.54⎤
+# ⎢     ⎥
+# ⎢-1.15⎥
+# ⎢     ⎥
+# ⎣  0  ⎦
+#
+# a2 / (1/s²):
+# 2.02
+#
+# ax / (m/s²):
+# -4.00
