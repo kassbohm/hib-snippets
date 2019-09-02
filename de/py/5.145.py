@@ -65,23 +65,23 @@ R = Matrix([ [cb, sb, 0], [-sb, cb, 0], [0, 0, 1] ])
 Rt = R.transpose()
 
 ref = "(x\u0304, y\u0304, z\u0304)"
-pprint("\n"+ref+"-components of the velocity vA of a particle on the wheel at A / (m/s):")
+pprint("\n"+ref+"-comp's of the velocity vA of a particle on the wheel at A / (m/s):")
 tmp = R*vA
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n"+ref+"-components of the vel. of a part. on the rod BC next to A / (m/s):")
+pprint("\n"+ref+"-comp's of the vel. of a part. on the rod BC next to A / (m/s):")
 vAb = Matrix([0, w2*lAB, 0])
 tmp = vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n"+ref+"components of the vel. of the part. on the wheel at A relative to "+ref+" / (m/s):")
+pprint("\n"+ref+"comp's of the vel. of the part. on the wheel at A rel. to "+ref+" / (m/s):")
 tmp = R*vA - vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n(x,y,z)-components of the vel. of the part. on the wheel at A relative to "+ref+" / (m/s):")
+pprint("\n(x,y,z)-comp's of the vel. of the part. on the wheel at A rel. to "+ref+" / (m/s):")
 vxyz = Rt*(R*vA - vAb)
 tmp = vxyz
 tmp /= m/s
