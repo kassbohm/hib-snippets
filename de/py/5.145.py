@@ -76,12 +76,12 @@ tmp = vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n"+ref+"comp's of the vel. of the part. on the wheel at A rel. to "+ref+" / (m/s):")
+pprint("\n"+ref+"comp's of the vel. of the wheel-part. at A rel. to "+ref+" / (m/s):")
 tmp = R*vA - vAb
 tmp /= m/s
 pprint(N(tmp,prec))
 
-pprint("\n(x,y,z)-comp's of the vel. of the part. on the wheel at A rel. to "+ref+" / (m/s):")
+pprint("\n(x,y,z)-comp's of the vel. of the wheel-part. at A rel. to "+ref+" / (m/s):")
 vxyz = Rt*(R*vA - vAb)
 tmp = vxyz
 tmp /= m/s
