@@ -19,8 +19,6 @@ a, t = var("a, t", positive=True)
 eq1 = Eq(mA * 2*a, S - mu*mA*g )
 eq2 = Eq(mB * a, -2*S + mB*g )
 
-pprint(eq1)
-pprint(eq2)
 
 sol = solve([eq1, eq2],[S,a])
 
@@ -45,5 +43,9 @@ pprint("\nvA / (m/s):")
 tmp = v/(m/s)
 pprint(N(tmp,3))
 
+# ⎧   g⋅mA⋅mB⋅(μ + 2)     -g⋅(2⋅mA⋅μ - mB) ⎫
+# ⎨S: ───────────────, a: ─────────────────⎬
+# ⎩      4⋅mA + mB            4⋅mA + mB    ⎭
+#
 # vA / (m/s):
 # 4.68
