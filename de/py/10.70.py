@@ -1,5 +1,5 @@
+from sympy.physics.units import *
 from sympy import *
-from sympy.physics.units import newton, meter, second, kilogram
 
 newton = kg*m/s**2
 g = 981 *m/s**2 / 100
