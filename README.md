@@ -12,7 +12,10 @@ Python-Snippets for Hibbeler-Engineering-Mechanics-Dynamics-Tasks
 
 ## Usage
 
-Use with Google Colaboratory, if you have a Google-account. Otherwise, run the Python-Code or Jupyter-Notebook on a platform of your choice - or on your own box.
+Use with Google Colaboratory, if you have a Google-account. Otherwise, run the Python-Code or Jupyter-Notebook on a platform of your choice - or on your own box. For example: Open:
+
+
+* de: https://colab.research.google.com/github/kassbohm/hib-snippets/blob/master/de/ipynb/5.145.ipynb
 
 ## Issues
 Please open an issue, if you think, that something is incorrect or misleading.
