@@ -1,5 +1,5 @@
 #
-Python-Snippets for Hibbeler-Engineering-Mechanics-Dynamics-Tasks
+Python-Snippets for some tasks in the field *Engineering Mechanics* (Dynamics).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -7,7 +7,7 @@ Python-Snippets for Hibbeler-Engineering-Mechanics-Dynamics-Tasks
 
  *hib-snippets* is a collection of Python snippets for the tasks from the following books by R.C. Hibbeler:
 
- * de: *Technische Mechanik. 3. Dynamik*
+ * de: *Technische Mechanik 3. Dynamik*
  * en: *Engineering Mechanics. Dynamics*
 
 ## Usage Options
