@@ -18,6 +18,3 @@ Option 2: Run Python-Code or Jupyter-Notebook elsewhere.
 
 ## Issues
 Please open an issue, if you think, that something is incorrect or misleading.
-
-## Contributing
-Please let me know, if you would like to contribute.
