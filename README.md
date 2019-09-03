@@ -7,7 +7,7 @@
  * de: *Technische Mechanik 3. Dynamik*
  * en: *Engineering Mechanics. Dynamics*
 
-## Usage Options
+## Usage
 
 Option 1: Use with [Google Colaboratory](https://colab.research.google.com), e.g. open the following tasks: 
 
