@@ -116,7 +116,7 @@ ca, sa = cos(a), sin(a)
 e = Matrix([0, ca, sa])
 eT = e.transpose()
 
-# with unicode overline=overbar:
+# with unicode utf overline=overbar:
 pprint("\nI"+u'z\u0304z\u0304'+" / (10³ kg m²):")
 tmp = eT.dot(I.dot(e))
 tmp = tmp.subs(a, 45 *pi/180)
