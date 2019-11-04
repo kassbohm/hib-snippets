@@ -37,7 +37,7 @@ pprint(tmp)
 
 pprint("\nw / (1/s):")
 tmp = W
-tmp /= (1/s**2)
+tmp /= (1/s)
 tmp = N(tmp,prec)
 pprint(tmp)
 
@@ -59,7 +59,7 @@ tmp = A
 tmp /= (1/s**2)
 tmp = N(tmp,prec)
 pprint(tmp)
-            
+
 # vB / (cm/s):
 # ⎡8.66⎤
 # ⎢    ⎥
@@ -68,11 +68,11 @@ pprint(tmp)
 # ⎣ 0  ⎦
 #
 # w / (1/s):
-# ⎡  0   ⎤
-# ⎢      ⎥
-# ⎢  0   ⎥
-# ⎢      ⎥
-# ⎣second⎦
+# ⎡ 0 ⎤
+# ⎢   ⎥
+# ⎢ 0 ⎥
+# ⎢   ⎥
+# ⎣1.0⎦
 #
 # aB / (cm/s²):
 # ⎡-7.88⎤

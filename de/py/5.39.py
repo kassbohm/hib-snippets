@@ -9,7 +9,6 @@ v = 2 * m/s
 a = 3 * m/s**2
 
 p1 = radians(50)
-pprint(p1)
 (c1, s1) = (cos(p1), sin(p1))
 
 pprint("\nω / (1/s):")
