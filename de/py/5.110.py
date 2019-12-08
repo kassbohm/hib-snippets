@@ -1,11 +1,8 @@
-prec = 3
-
 rB, l = 150 *mm, 500 *mm
 w, a  = 8 /s, 16 /s**2
 phi   = 30 *deg
 w = Matrix([0,0,-w])
 a = Matrix([0,0,-a])
-
 
 cp, sp = cos(phi), sin(phi)
 er = Matrix([ -cp, sp, 0 ])
@@ -51,7 +48,7 @@ tmp = WS
 tmp /= (1/s)
 tmp = iso_round(tmp,0.01)
 pprint(tmp)
-           
+
 # vB / (m/s):
 # ⎡0.6 ⎤
 # ⎢    ⎥
