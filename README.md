@@ -4,8 +4,8 @@
 
  *hib-snippets* is a collection of Python snippets for:
 
- * de: Hibbeler: *Technische Mechanik 3. Dynamik*
- * en: Hibbeler: *Engineering Mechanics. Dynamics*
+ * de: *Technische Mechanik 3. Dynamik*
+ * en: *Engineering Mechanics. Dynamics*
 
 ## Usage
 
