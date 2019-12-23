@@ -2,7 +2,7 @@
 
 # hib-snippets
 
- *hib-snippets* is a collection of Python snippets for the tasks from the following books by R.C. Hibbeler:
+ *hib-snippets* is a collection of Python snippets for:
 
  * de: *Technische Mechanik 3. Dynamik*
  * en: *Engineering Mechanics. Dynamics*
