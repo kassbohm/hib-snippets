@@ -3,12 +3,12 @@ alpha = var("alpha")
 rD, v = var("rD, v")
 
 sub_list=[
-    ( la,     2*m           ),
-    ( lb,     1*m           ),
-    ( ha,     3*m/2         ),
-    ( alpha, 45 *pi/180     ),
-    ( rD,     5*m  /100     ),
-    ( v,     25*m/s/100     ),
+    ( la,     2 *m       ),
+    ( lb,     1 *m       ),
+    ( ha,     3 *m/2     ),
+    ( alpha, 45 *deg     ),
+    ( rD,     5 *m  /100 ),
+    ( v,     25 *m/s/100 ),
     ]
 
 wD = v/rD
