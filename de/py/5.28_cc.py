@@ -87,7 +87,7 @@ tmp /= m/s
 tmp = iso_round(tmp,0.1)
 pprint(tmp)
 
-pprint("\naC / (m/s):   ")
+pprint("\naC / (m/s²):   ")
 tmp = aC
 tmp = tmp.subs(sub_list)
 tmp /= m/s**2
