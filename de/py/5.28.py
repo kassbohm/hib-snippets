@@ -40,7 +40,7 @@ tmp /= m/s**2
 tmp = iso_round(tmp,0.1)
 pprint(tmp)
 
-# vC / (m/s):   
+# vC / (m/s):
 # ⎡0.0 ⎤
 # ⎢    ⎥
 # ⎢10.6⎥
