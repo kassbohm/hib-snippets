@@ -67,7 +67,7 @@ sub_list = [
 
 l = sqrt(b*b + c*c)
 
-# ---
+dAB = Matrix([0, b, -c])
 
 vA = Matrix([0, 0, vAz])
 aA = Matrix([0, 0, aAz])
@@ -82,8 +82,6 @@ ca = b/sqrt(b*b + d*d)
 sa = d/sqrt(b*b + d*d)
 e = Matrix([-sa, ca, 0])
 vB = vBe * e
-
-dAB = Matrix([0, b, -c])
 
 # equations to solve:
 eq1 = Eq(w.dot(dAB), 0)
