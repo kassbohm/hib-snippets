@@ -1,9 +1,3 @@
-from sympy.physics.units import *
-from sympy import *
-
-prec = 3
-cm = m/100
-
 r = 40*cm
 (a, w) = (4 /s**2, 2 /s)
 beta = 30*pi/180
@@ -33,7 +27,7 @@ vB = Matrix([vBx, vBy, 0])
 pprint("\nvB / (m/s):")
 tmp = vB
 tmp /= m/s
-tmp = N(tmp,prec)
+tmp = iso_round(tmp,0.01)
 pprint(tmp)
 
 # Find aBx and aBy:
@@ -45,19 +39,19 @@ aB = Matrix([aBx, aBy, 0])
 pprint("\naB / (m/s²):")
 tmp = aB
 tmp /= m/s**2
-tmp = N(tmp,prec)
+tmp = iso_round(tmp,0.01)
 pprint(tmp)
 
-# vB / (m/s):
-# ⎡ 1.2 ⎤
-# ⎢     ⎥
-# ⎢0.693⎥
-# ⎢     ⎥
-# ⎣  0  ⎦
+          # vB / (m/s):
+# ⎡1.2 ⎤
+# ⎢    ⎥
+# ⎢0.69⎥
+# ⎢    ⎥
+# ⎣0.0 ⎦
 #
 # aB / (m/s²):
-# ⎡3.79 ⎤
-# ⎢     ⎥
-# ⎢0.586⎥
-# ⎢     ⎥
-# ⎣  0  ⎦
+# ⎡3.79⎤
+# ⎢    ⎥
+# ⎢0.59⎥
+# ⎢    ⎥
+# ⎣0.0 ⎦
