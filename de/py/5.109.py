@@ -2,8 +2,6 @@ r = 40*cm
 (a, w) = (4 /s**2, 2 /s)
 beta = 30*pi/180
 
-# ---
-
 (cb, sb) = (cos(beta), sin(beta))
 dCB = Matrix([-r*cb, r*sb, 0])
 
@@ -42,7 +40,7 @@ tmp /= m/s**2
 tmp = iso_round(tmp,0.01)
 pprint(tmp)
 
-          # vB / (m/s):
+# vB / (m/s):
 # ⎡1.2 ⎤
 # ⎢    ⎥
 # ⎢0.69⎥
