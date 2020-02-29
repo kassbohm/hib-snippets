@@ -1,10 +1,4 @@
-from sympy.physics.units import *
-from sympy import *
-
-prec = 5
-
-newton = kg*m/s**2
-g = S(981)/100 *m/s**2
+grav = 981 *m/s**2 / 100
 
 mass, a, mu = var("mass, a, mu")
 
@@ -14,7 +8,7 @@ sub_list = [
     (mu, S(1)/10),
     ]
 
-G = mass*g
+G = mass*grav
 c = sqrt(2)/2
 
 Nv, S = var("Nv, S")
@@ -27,27 +21,32 @@ Nv = sol[Nv]
 tmp = Nv
 tmp = tmp.subs(sub_list)
 tmp = tmp.simplify()
-tmp /= newton
-pprint(N(tmp,prec))
+tmp /= Newton
+tmp = iso_round(tmp,0.1)
+pprint(tmp)
 
 pprint("\nS / Newton:")
 S = sol[S]
 tmp = S
 tmp = tmp.subs(sub_list)
 tmp = tmp.simplify()
-tmp /= newton
-pprint(N(tmp,prec))
+tmp /= Newton
+tmp = iso_round(tmp,0.1)
+pprint(tmp)
 
 pprint("\nphi / deg:")
 phi = asin(mu * Nv / S)
 tmp = phi
 tmp = tmp.subs(sub_list)
 tmp = tmp.simplify()
-tmp = deg(tmp)
-pprint(N(tmp,prec))
+tmp = tmp * 180 / pi
+tmp = iso_round(tmp,0.001)
+pprint(tmp)
+
 pprint("\ntheta / deg:")
 tmp = 45 - tmp
-pprint(N(tmp,prec))
+tmp = iso_round(tmp,0.001)
+pprint(tmp)
 
 # N / Newton:
 # 6770.9
