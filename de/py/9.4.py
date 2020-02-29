@@ -1,9 +1,5 @@
-from sympy.physics.units import *
-from sympy import *
-
-prec = 3
-
 l = 1.4 *m
+
 theta = N(25*pi/180)
 
 ct, st = cos(theta), sin(theta)
@@ -12,7 +8,6 @@ ct, st = cos(theta), sin(theta)
 w  = Matrix([2, 0, 6]) / s
 wp = Matrix([1.5, 12, 3]) / (s**2)
 
-
 r = l*Matrix([0, ct, st])
 
 vA = w.cross(r)
@@ -20,21 +15,24 @@ aA = wp.cross(r) + w.cross(w.cross(r))
 
 pprint("\nvA / (m/s):")
 tmp = vA / (m/s)
-pprint(N(tmp,prec))
+tmp = iso_round(tmp,0.1)
+pprint(tmp)
+
 pprint("\naA / (m/s²):")
 tmp = aA / (m/(s**2))
-pprint(N(tmp,prec))
+tmp = iso_round(tmp,0.1)
+pprint(tmp)
 
 # vA / (m/s):
-# ⎡-7.61⎤
-# ⎢     ⎥
-# ⎢-1.18⎥
-# ⎢     ⎥
-# ⎣2.54 ⎦
+# ⎡-7.6⎤
+# ⎢    ⎥
+# ⎢-1.2⎥
+# ⎢    ⎥
+# ⎣2.5 ⎦
 #
 # aA / (m/s²):
-# ⎡ 10.4 ⎤
-# ⎢      ⎥
-# ⎢-51.6 ⎥
-# ⎢      ⎥
-# ⎣-0.463⎦
+# ⎡10.4 ⎤
+# ⎢     ⎥
+# ⎢-51.6⎥
+# ⎢     ⎥
+# ⎣-0.5 ⎦
