@@ -48,3 +48,15 @@ pprint(N(tmp,prec))
 pprint("\ntheta / deg:")
 tmp = 45 - tmp
 pprint(N(tmp,prec))
+
+# N / Newton:
+# 6770.9
+#
+# S / Newton:
+# 1523.2
+#
+# phi / deg:
+# 26.392
+#
+# theta / deg:
+# 18.608
